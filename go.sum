@@ -8,3 +8,5 @@ github.com/nauratiara/go-printslice v1.0.3 h1:KbFqUcXXVju1DxjKqg/Az4CbW00TOQvsqn
 github.com/nauratiara/go-printslice v1.0.3/go.mod h1:YbZ0WHjXwb5FXfnJPCx1URh1YBZFCEVIfcYWe3kUnQY=
 github.com/nauratiara/go-printslice v1.0.4 h1:v51sPi1q2dzCAI4W/rHNb4utIHamthRMpgSy3XjsVis=
 github.com/nauratiara/go-printslice v1.0.4/go.mod h1:YbZ0WHjXwb5FXfnJPCx1URh1YBZFCEVIfcYWe3kUnQY=
+github.com/nauratiara/go-printslice v1.0.5 h1:uVt/mtz2Q+tcpYmeXGsCD5TLSoDA59wYY/R6im10yDo=
+github.com/nauratiara/go-printslice v1.0.5/go.mod h1:YbZ0WHjXwb5FXfnJPCx1URh1YBZFCEVIfcYWe3kUnQY=

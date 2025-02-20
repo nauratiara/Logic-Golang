@@ -33,7 +33,31 @@ func main() {
 	//result := logic2.Soal02(9)
 	//slice.PrintSlice2d(result)
 
-	result := logic2.Soal03(9)
-	slice.PrintSlice2d(result)
+	//result := logic2.Soal03(9)
+	//slice.PrintSlice2d(result)
+
+	//result := logic2.Soal04(9)
+	//slice.PrintSlice2d(result)
+
+	//result := logic2.Soal05(9)
+	//slice.PrintSlice2d(result)
+
+	//result := logic2.Soal07(9)
+	//slice.SliceKosong2d(result)
+
+	//result := logic2.Soal08(9)
+	//slice.SliceKosong2d(result)
+
+	//result := logic2.Soal09(9)
+	//slice.SliceKosong2d(result)
+
+	//result := logic2.Soal10(9)
+	//slice.SliceKosong2d(result)
+
+	//result := logic2.Soal11(9)
+	//slice.SliceKosong2d(result)
+
+	result := logic2.Soal12(9)
+	slice.SliceKosong2d(result)
 
 }
