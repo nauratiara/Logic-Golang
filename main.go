@@ -1,66 +1,34 @@
 package main
 
-import "fmt"
-
-func soal1(n int) {
-	fmt.Printf("Soal No. 1\n")
-	fmt.Printf("n = %d\n\n", n)
-	fmt.Printf(" ")
-
-	for i := 1; i <= n; i++ {
-		fmt.Print(2*i-1, " ")
-	}
-
-	fmt.Println()
-}
-
-func soal2(n int) {
-	fmt.Printf("Soal No. 2\n")
-	fmt.Printf("n = %d\n\n", n)
-	fmt.Printf(" ")
-
-	for i := 1; i <= n; i++ {
-		fmt.Print(2*i, " ")
-	}
-
-	fmt.Println()
-}
-
-func soal3(n int) {
-	fmt.Printf("Soal No. 3\n")
-	fmt.Printf("n = %d\n\n", n)
-	fmt.Printf(" ")
-
-	for i := 1; i <= n; i++ {
-		fmt.Print(3*i, " ")
-	}
-
-	fmt.Println()
-}
-
-func soal4(n int) {
-	fmt.Printf("Soal No. 4\n")
-	fmt.Printf("n = %d\n\n", n)
-	fmt.Printf(" ")
-
-	for i := n; i >= 1; i-- {
-		fmt.Print(2*i-1, " ")
-	}
-
-	fmt.Println()
-}
+import (
+	"belajar/logic2"
+	"fmt"
+	slice "github.com/nauratiara/go-printslice"
+)
 
 func main() {
-	n := 10
-
-	soal1(n)
+	//n := 10
+	//
+	//result := logic1.Soal1(n)
+	//slice.PrintSlice(result)
+	//fmt.Println()
+	//
+	//result = logic1.Soal2(n)
+	//slice.PrintSlice(result)
+	//fmt.Println()
+	//
+	//result = logic1.Soal3(n)
+	//slice.PrintSlice(result)
+	//fmt.Println()
+	//
+	//result = logic1.Soal4(n)
+	//slice.PrintSlice(result)
+	//
+	result := logic2.Soal01(9)
+	slice.PrintSlice2d(result)
 	fmt.Println()
 
-	soal2(n)
-	fmt.Println()
+	//result := logic2.Soal06(9)
+	//slice.PrintSlice2d(result)
 
-	soal3(n)
-	fmt.Println()
-
-	soal4(n)
 }
