@@ -2,7 +2,6 @@ package main
 
 import (
 	"belajar/logic2"
-	"fmt"
 	slice "github.com/nauratiara/go-printslice"
 )
 
@@ -24,11 +23,17 @@ func main() {
 	//result = logic1.Soal4(n)
 	//slice.PrintSlice(result)
 	//
-	result := logic2.Soal01(9)
-	slice.PrintSlice2d(result)
-	fmt.Println()
+	//result := logic2.Soal01(9)
+	//slice.PrintSlice2d(result)
+	//fmt.Println()
 
 	//result := logic2.Soal06(9)
 	//slice.PrintSlice2d(result)
+
+	//result := logic2.Soal02(9)
+	//slice.PrintSlice2d(result)
+
+	result := logic2.Soal03(9)
+	slice.PrintSlice2d(result)
 
 }
