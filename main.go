@@ -75,6 +75,6 @@ func main() {
 	//result := logic3.Soal02(9)
 	//slice.SliceKosong2d(result)
 
-	result := logic3.Soal10(9)
+	result := logic3.Soal12(9)
 	slice.SliceKosong2d(result)
 }

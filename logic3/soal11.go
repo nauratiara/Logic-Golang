@@ -6,24 +6,30 @@ func Soal11(n int) [][]int {
 		matrix[i] = make([]int, n)
 	}
 
-	nTengah := (n - 1) / 2
-	num := 1
+	start := 1
+	mid := (n - 1) / 2
+	for i := 0; i < mid; i++ {
+		matrix[i][i] = start
+		matrix[n-1-i][i] = start
+		start += 2
+	}
 
-	for row := 0; row <= nTengah; row++ {
-		for col := 0; col < n; col++ {
-			if (row == 0 || row == nTengah) && (col == row || col == n-1-row) {
-				matrix[row][col] = num
-				matrix[n-1-row][col] = num
-			} else if row > 0 && row < nTengah {
-				if col == row {
-					matrix[row][col] = num + 2
-					matrix[n-1-row][col] = num + 2
-				} else if col == n-1-row {
-					matrix[row][col] = num + 4
-					matrix[n-1-row][col] = num + 4
-				} else if col > nTengah && (col-row) <= nTengah && (col+row) >= nTengah+1 && (col+row) <= n+(nTengah-row)-1 {
-					matrix[row][col] = num + 2*(col-nTengah)
-					matrix[n-1-row][col] = num + 2*(col-nTengah)
+	start = 1
+	for i := 0; i < mid; i++ {
+		if i%2 == 0 {
+			for j := n - 1; j >= mid; j-- {
+				if i+j >= 8 {
+					matrix[i][j] = start
+					matrix[n-1-i][j] = start
+					start += 2
+				}
+			}
+		} else {
+			for j := mid; j < n; j++ {
+				if i+j >= 8 {
+					matrix[i][j] = start
+					matrix[n-1-i][j] = start
+					start += 2
 				}
 			}
 		}
